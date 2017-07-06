@@ -1,0 +1,14 @@
+$badass: #bada55;
+
+@function next_val(){
+	@return 1;
+}
+
+body {
+  margin: next_val();
+  background-color: $badass;
+}
+
+body2{
+  @extend body;
+}
